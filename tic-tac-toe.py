@@ -3,7 +3,6 @@
 
 # **Function to print the board**
 
-# In[18]:
 
 
 from IPython.display import clear_output
@@ -26,7 +25,6 @@ def display_board(board):
 
 # **Function to take input of the players input which may be either X or O**
 
-# In[19]:
 
 
 def player_input():
@@ -42,7 +40,6 @@ def player_input():
 
 # **Assigning the desired position, entered by the player to the board **
 
-# In[20]:
 
 
 def place_marker(board, marker2, position):
@@ -54,7 +51,6 @@ def place_marker(board, marker2, position):
 
 # **To check after input whether the player has won or not?**
 
-# In[21]:
 
 
 def win_check(board,mark):
@@ -72,8 +68,6 @@ def win_check(board,mark):
 
 # **Function which selects the random player**
 
-# In[22]:
-
 
 import random
 
@@ -87,16 +81,12 @@ def choose_first():
 
 # **To check whether the space input by the player is available on the board or not?**
 
-# In[23]:
-
 
 def space_check(board, position):
     return board[position] == " "
 
 
 # **To check whether the board is full or not after the players input**
-
-# In[24]:
 
 
 def full_board_check(board):
@@ -108,8 +98,6 @@ def full_board_check(board):
 
 
 # **Function asking for players next position, checking that the same is available or not in the board and then assigning the value to the board if returned true**
-
-# In[25]:
 
 
 def player_choice(board):
@@ -131,8 +119,6 @@ def player_choice(board):
 
 # **Function asking players whether they want to play again or not?**
 
-# In[26]:
-
 
 def replay():
     ans = input('Do you want to play again? Enter Yes or No: ')
@@ -140,8 +126,6 @@ def replay():
 
 
 # **Combining each and every function at their respective places**
-
-# In[17]:
 
 
 print('Welcome to Tic Tac Toe!')
